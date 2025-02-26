@@ -1,6 +1,4 @@
-# CS581-PA1
-Programming Assignment 1
-
+# CS581-Programming Assignment 1
 ### Required Packages
 
 `pip install -r requirements.txt`
