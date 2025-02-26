@@ -10,7 +10,7 @@ cluded. Please also include any other important implementation specific details
 about your code.
 - A makefile (if your code requires compilation)
 
-### Running the Program
+### Required Packages
 
 `pip install -r requirements.txt`
 
@@ -24,7 +24,7 @@ For graphing:
 * `pip install pandas`
 * `pip install matplotlib`
 
-To run:
+### Running the Program
 
 `python3 sort.py <input_file>`
 
