@@ -14,7 +14,7 @@ about your code.
 
 `pip install -r requirements.txt`
 
-or 
+OR download each one seperately:
 
 Sort.py:
 * `pip install numpy`
@@ -24,7 +24,7 @@ For graphing:
 * `pip install pandas`
 * `pip install matplotlib`
 
-Then do:
+To run:
 
 `python3 sort.py <input_file>`
 
