@@ -14,6 +14,16 @@ about your code.
 
 `pip install -r requirements.txt`
 
+or 
+
+Sort.py:
+* `pip install numpy`
+* `pip install argparse`
+
+For graphing:
+* `pip install pandas`
+* `pip install matplotlib`
+
 Then do:
 
 `python3 sort.py <input_file>`
