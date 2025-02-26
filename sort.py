@@ -8,24 +8,27 @@ def gulag_median(arr):
     # Remove the largest and smallest elements from the array until one element remains.
     copy = arr.copy()
     while len(copy) > 1:
-        largest = copy[0]
-        largest_index = 0 
+        largest = smallest = copy[0]
+        largest_index = smallest_index = 0 
         for i in range(len(copy)):
             if copy[i] > largest:
                 largest = copy[i]
                 largest_index = i
-        copy.pop(largest_index)
-
-        if len(copy) == 1:
-            break
-        
-        smallest = copy[0]
-        smallest_index = 0
-        for i in range(len(copy)):
             if copy[i] < smallest:
                 smallest = copy[i]
                 smallest_index = i
-        copy.pop(smallest_index)
+        if largest_index == smallest_index:
+            copy.pop(largest_index)
+        elif largest_index > smallest_index:
+            copy.pop(largest_index)
+            if len(copy) == 1:
+                break
+            copy.pop(smallest_index)
+        else:
+            copy.pop(smallest_index)
+            if len(copy) == 1:
+                break
+            copy.pop(largest_index)
     return copy[0]
 
 def median_of_medians(arr, r=5):

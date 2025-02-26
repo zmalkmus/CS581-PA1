@@ -8,7 +8,8 @@
 # Usage: ./run_data_collection.sh
 # Example: ./run_data_collection.sh
 
-r_values=(3 4 5 7 8 9 11)
+# r_values=(3 4 5 7 8 9 11)
+r_values=(6 10 25 26)
 
 for r in "${r_values[@]}"; do
     echo "Processing for r_value: $r"
