@@ -18,7 +18,6 @@ Then do:
 
 `python3 sort.py <input_file>`
 
-
 ### Generating Data
 
 `python3 gen_data.py 1000 --min 1 --max 1000 --outfile "1000.txt"`
